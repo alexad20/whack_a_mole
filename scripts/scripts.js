@@ -42,7 +42,7 @@ function setMole(){
         currMoleTile.innerHTML = "";
     }
     let mole = document.createElement("img");
-    mole.src = "../../images/monty-mole.png";
+    mole.src = "./images/monty-mole.png";
     let num = getRandomTile(currPlantTile ? currPlantTile.id : null);
     currMoleTile = document.getElementById(num);
     currMoleTile.appendChild(mole);
@@ -56,7 +56,7 @@ function setPlant(){
         currPlantTile.innerHTML = "";
     }
     let plant = document.createElement("img");
-    plant.src = "../../images/piranha-plant.png";
+    plant.src = "./images/piranha-plant.png";
     let num = getRandomTile(currMoleTile ? currMoleTile.id : null);
     currPlantTile = document.getElementById(num);
     currPlantTile.appendChild(plant);
